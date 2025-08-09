@@ -963,7 +963,7 @@ body::after {
 .sponsor-card {
     background: var(--bg-primary);
     border-radius: 20px;
-    padding: 30px;
+    padding: 15px;
     text-align: center;
     text-decoration: none;
     color: inherit;
@@ -982,14 +982,19 @@ body::after {
 
 .sponsor-icon {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+.sponsor-icon img {
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .sponsor-card h4 {
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--primary-color);
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .sponsor-card p {
@@ -1402,4 +1407,21 @@ body::after {
 }
 
 
+
+
+
+.form-group-full-width {
+    grid-column: 1 / -1; /* Make it span all columns */
+    text-align: center;
+    max-width: 500px; /* Adjust this value to match the combined width of the two input fields above */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group-full-width label,
+.form-group-full-width input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 387.5px; /* Set a fixed width to match other input fields */
+}
 

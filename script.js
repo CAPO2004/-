@@ -120,6 +120,7 @@ class FormManager {
                     maritalStatus: formData.get("maritalStatus"),
                     phone: formData.get("phone"),
                     address: formData.get("address"),
+                    district: formData.get("district"),
                     candidate: formData.get("candidate"),
                     requests: formData.get("requests")
                 };
@@ -344,8 +345,7 @@ class LinkManager {
         if (newspaperLink) {
             newspaperLink.addEventListener("click", (e) => {
                 e.preventDefault();
-                // You can replace this with actual newspaper website URL
-                window.open("#", "_blank");
+                window.open("https://www.facebook.com/share/1C7Pbbs3Mq/?mibextid=wwXIfr", "_blank");
             });
         }
 
@@ -354,8 +354,7 @@ class LinkManager {
         if (academyLink) {
             academyLink.addEventListener("click", (e) => {
                 e.preventDefault();
-                // You can replace this with actual academy website URL
-                window.open("#", "_blank");
+                window.open("https://www.facebook.com/share/1BH661fktk/?mibextid=wwXIfr", "_blank");
             });
         }
     }

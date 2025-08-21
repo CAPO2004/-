@@ -757,8 +757,27 @@ body::after {
 
 .form-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
+}
+
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .form-container {
+        padding: 20px 15px;
+        margin: 0 10px;
+    }
 }
 
 .form-group {
@@ -783,6 +802,25 @@ body::after {
     background: var(--bg-secondary);
     color: var(--text-primary);
     transition: all 0.3s ease;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .form-group input,
+    .form-group select {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-group input,
+    .form-group select {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
 }
 
 .form-group input:focus,
@@ -815,8 +853,26 @@ body::after {
     font-family: 'Cairo', sans-serif;
     background: var(--bg-secondary);
     color: var(--text-primary);
-    resize: vertical;
     transition: all 0.3s ease;
+    resize: vertical;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .question-group textarea {
+        padding: 12px;
+        font-size: 0.95rem;
+        min-height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .question-group textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+        min-height: 80px;
+    }
 }
 
 .question-group textarea:focus {
@@ -1424,3 +1480,4 @@ body::after {
     margin-right: auto;
     width: 387.5px; /* Set a fixed width to match other input fields */
 }
+

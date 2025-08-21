@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصوت يجمعنا - دائرة قويسنا وبركة السبع</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Open Graph / Facebook / WhatsApp / Telegram -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elsoot.com/survey/">
+    <meta property="og:title" content="الصوت يجمعنا - دائرة قويسنا وبركة السبع">
+    <meta property="og:description" content="شاركنا برأيك ومتطلباتك من النائب القادم - الصوت يجمعنا">
+    <meta property="og:image" content="https://elsoot.com/survey/assets/images/elsoot_thumbnail.jpg?v=1">
+    <meta property="og:site_name" content="الصوت يجمعنا">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://elsoot.com/survey/">
+    <meta property="twitter:title" content="الصوت يجمعنا - دائرة قويسنا وبركة السبع">
+    <meta property="twitter:description" content="شاركنا برأيك ومتطلباتك من النائب القادم - الصوت يجمعنا">
+    <meta property="twitter:image" content="https://elsoot.com/survey/assets/images/elsoot_thumbnail.jpg?v=1">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle" aria-label="تبديل إلى الوضع الليلي">
+        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+    </button>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Parliament Logo -->
+                <div class="parliament-logo">
+                    <img src="assets/images/parliament_logo_new.png" alt="مجلس النواب المصري" class="parliament-img">
+                </div>
+
+                <!-- Main Logo and Title -->
+                <div class="main-section">
+                    <div class="logo-title-wrapper">
+                        <img src="assets/images/new_logo.jpg" alt="الصوت يجمعنا" class="main-logo">
+                        <div class="title-content">
+                            <h1 class="main-title">الصوت يجمعنا</h1>
+                            <p class="subtitle">عن دائرة قويسنا وبركة السبع</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Combined Info Section -->
+                <div class="combined-info">
+                    <p class="sponsorship-text">برعاية شركة الصوت الدولية</p>
+                    <div class="ceo-info">
+                        <img src="assets/images/new_ceo.jpg" alt="عادل سعد عبيد" class="ceo-image">
+                        <div class="ceo-text">
+                            <h4>رئيس مجلس الإدارة</h4>
+                            <p>عادل سعد عبيد</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Survey Section -->
+            <section class="survey-section" id="survey">
+                <h2 class="section-title">كلمة حق (صوتك أمانة)</h2>
+                <p class="section-subtitle">شاركنا برأيك ومتطلباتك من النائب القادم</p>
+
+                <!-- Information Form -->
+                <div class="form-container">
+                    <form id="surveyForm" class="survey-form">
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h3 class="form-section-title">البيانات الشخصية</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="fullName">الاسم بالكامل</label>
+                                    <input type="text" id="fullName" name="fullName" required placeholder="أدخل اسمك الكامل">
+                                </div>
+                                <div class="form-group">
+                                    <label for="birthDate">تاريخ الميلاد</label>
+                                    <input type="date" id="birthDate" name="birthDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="job">الوظيفة الحالية</label>
+                                    <input type="text" id="job" name="job" required placeholder="أدخل وظيفتك الحالية">
+                                </div>
+                                <div class="form-group">
+                                    <label for="maritalStatus">الحالة الاجتماعية</label>
+                                    <select id="maritalStatus" name="maritalStatus" required>
+                                        <option value="">اختر الحالة الاجتماعية</option>
+                                        <option value="أعزب">أعزب</option>
+                                        <option value="متزوج">متزوج</option>
+                                        <option value="مطلق">مطلق</option>
+                                        <option value="أرمل">أرمل</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">رقم الهاتف</label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="01xxxxxxxxx">
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">العنوان</label>
+                                    <input type="text" id="address" name="address" required placeholder="أدخل عنوانك">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Survey Questions -->
+                        <div class="form-section">
+                            <h3 class="form-section-title">الأسئلة السياسية</h3>
+                            <div class="question-group">
+                                <label for="candidate">من هو المرشح الذي تعطي له صوتك؟</label>
+                                <textarea id="candidate" name="candidate" required placeholder="اكتب اسم المرشح المفضل لديك"></textarea>
+                            </div>
+                            <div class="question-group">
+                                <label for="requests">طلباتك من النائب القادم</label>
+                                <textarea id="requests" name="requests" required placeholder="اكتب طلباتك ومتطلباتك من النائب القادم"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Submit Section -->
+                        <div class="submit-section">
+                            <button type="submit" id="submitBtn" class="submit-btn">
+                                <span class="btn-text">إرسال البيانات</span>
+                                <span class="btn-icon">📤</span>
+                                <span class="btn-loading" style="display: none;">
+                                    <div class="spinner"></div>
+                                </span>
+                            </button>
+                            <p class="required-note">جميع الحقول مطلوبة *</p>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Group Section -->
+            <section class="group-section">
+                <div class="group-card">
+                    <h3>انضم إلى مجموعة الصوت يجمعنا</h3>
+                    <p>تابع آخر الأخبار والتطورات في دائرة قويسنا وبركة السبع</p>
+                    <a href="#" class="group-btn" id="groupLink">
+                        <span>الانضمام للمجموعة</span>
+                        <span>📲</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Sponsors Section -->
+            <section class="sponsors-section">
+                <h2 class="section-title">الرعاة</h2>
+                <div class="sponsors-grid">
+                    <a href="#" class="sponsor-card" id="newspaperLink">
+                        <div class="sponsor-icon">📰</div>
+                        <h4>جريدة الصوت الإخبارية</h4>
+                        <p>أحدث الأخبار والتطورات المحلية والإقليمية</p>
+                    </a>
+                    <a href="#" class="sponsor-card" id="academyLink">
+                        <div class="sponsor-icon">🎓</div>
+                        <h4>أكاديمية الصوت للإعلام المتكامل</h4>
+                        <p>تدريب وتأهيل الكوادر الإعلامية المتخصصة</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h4>حقوق النشر شركة الصوت الدولية</h4>
+                <p>بركة السبع - فيلا مول 2 - الدور الرابع</p>
+                <div class="contact-info">
+                    <a href="https://wa.me/201287296630" class="whatsapp-link" target="_blank">
+                        <span>للتواصل واتس فقط</span>
+                        <span>📲</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Message Overlay -->
+    <div id="messageOverlay" class="message-overlay">
+        <div class="message-box">
+            <div id="messageIcon" class="message-icon"></div>
+            <h3 id="messageTitle"></h3>
+            <p id="messageText"></p>
+            <button id="messageBtn" class="message-btn">حسناً</button>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <p>جاري إرسال البيانات...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
